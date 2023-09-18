@@ -9,8 +9,8 @@ spec:
   project: default
   source:
     path: charts/inalix/
-    repoURL: https://github.com/wahyu-sty/config-example.git
-    targetRevision: test
+    repoURL: https://github.com/dimasinalix/config-example.git
+    targetRevision: dimas
     helm:
       version: v3
       parameters:
