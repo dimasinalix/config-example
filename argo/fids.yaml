@@ -26,7 +26,7 @@ spec:
             hostname: fids.10-11-1-31.nip.io
           env:
           - name: DATABASE_URL
-            value: postgres://inalix:password@pgc-inalix-rw.inalix-system/fids
+            value: postgres://inalix:password@pgc-inalix-rw.inalix-system/inalix
           - name: REDIS_URL
             value: redis://inalix-system-redis-master.inalix-system/1
           - name: LOCAL_AIRPORT_NAME
@@ -37,19 +37,8 @@ spec:
             value: Makassar
           - name: INALIX_APPS
             value: inalix.flight inalix.flight_public inalix.info inalix.display inalix.devices inalix.device_led inalix.plugin_advertisement inalix.plugin_schedule inalix.plugin_clock inalix.weather inalix.input inalix.input.inxsync inalix.plugin_announcer
-          - name: TIME_ZONE
-            value: Etc/GMT-8
-          - name: CELERY_WORKERS
-            value: 10
-          - name: BASE_APPLICATION_TYPE
-            value: FIDS
-          - name: LOCAL_TERMINAL_DEFAULT
-            value: 1
-          - name: UWSGI_WORKERS
-            value: 10
           - name: DEVICES_LICENSING
             value: false
-
 
         daphne:
           enabled: true
